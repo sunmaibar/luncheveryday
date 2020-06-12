@@ -55,6 +55,12 @@ const Wrapper = styled.div`
   .basic {
     width: 100%;
   }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
 `
 
 export default Images

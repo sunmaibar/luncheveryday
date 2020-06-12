@@ -1,14 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Images from "../components/examples/Images"
 
 const dunches = () => {
-  return (
-    <Layout>
-      hello from dunches page!!!
-      <Images />
-    </Layout>
-  )
+  return <Layout>hello from dunches page!!!</Layout>
 }
 
 export default dunches
