@@ -7,7 +7,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getLunches = graphql`
   query {
-    allLunches: allContentfulLuncheveryday2020(
+    featuredLunches: allContentfulLuncheveryday2020(
       filter: { featured: { eq: true } }
     ) {
       edges {
@@ -31,7 +31,8 @@ const getLunches = graphql`
 
 const FeaturedLunches = () => {
   const response = useStaticQuery(getLunches)
-  console.log(response)
+  const lunches = response.featuredLunches.edges
+  console.log(lunches)
   return (
     <section className={styles.tours}>
       <Title title="本週" subtitle="主打" />
