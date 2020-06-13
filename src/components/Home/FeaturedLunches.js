@@ -7,10 +7,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const FeaturedLunches = () => {
   return (
-    <div>
-      Hello from FeaturedLunches
-      <Lunch />
-    </div>
+    <section className={styles.tours}>
+      <Title title="本週" subtitle="主打" />
+      <AniLink fade to="/lunches" className="btn-primary">
+        更多餐點
+      </AniLink>
+    </section>
   )
 }
 
