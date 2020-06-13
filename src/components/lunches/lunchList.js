@@ -22,7 +22,8 @@ export default class LunchList extends Component {
         <Title title="所有" subtitle="餐點" />
         <div className={styles.center}>
           {this.state.sortedLunches.map(({ node }) => {
-            return <Lunch key={node.contentful_id} lunch={node} />
+            return <h1 key={node.contentful_id}>hello2</h1>
+            // <Lunch key={node.contentful_id} lunch={node} />
           })}
         </div>
       </section>
