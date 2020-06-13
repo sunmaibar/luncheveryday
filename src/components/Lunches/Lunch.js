@@ -6,7 +6,16 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Lunch = ({ lunch }) => {
   const { title, cost, slug, road, seatsNum, images } = lunch
-  return <div>this is a single Lunch</div>
+
+  let mainImage = images[0].fluid
+
+  return (
+    <article className={styles.tour}>
+      <div className={styles.imgContainer}>
+        <Image fluid={mainImage} className={styles.img} alt="single" />
+      </div>
+    </article>
+  )
 }
 
 export default Lunch
