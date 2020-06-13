@@ -19,6 +19,11 @@ export default class LunchList extends Component {
     return (
       <section className={styles.tours}>
         <Title title="所有" subtitle="餐點" />
+        <div className={styles.center}>
+          {this.state.sortedLunches.map(({ node }) => {
+            return <Lunch key={node.contentful_id} lunch={node} />
+          })}
+        </div>
       </section>
     )
   }
