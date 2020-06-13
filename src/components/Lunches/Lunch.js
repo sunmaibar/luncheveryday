@@ -24,6 +24,10 @@ const Lunch = ({ lunch }) => {
             <FaMap className={styles.icon} />
             {road}
           </h4>
+          <div className={styles.details}>
+            <h6>{seatsNum ? `共有${seatsNum}座位` : "不提供內用"}</h6>
+            <h6>{cost ? `平均消費約${cost}人` : "未能提供平均消費"}</h6>
+          </div>
         </div>
       </div>
     </article>
