@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import styled from "styled-components"
 
 const getLunches = graphql`
   query {
@@ -36,9 +37,11 @@ const FeaturedLunches = () => {
   return (
     <section className={styles.tours}>
       <Title title="本週" subtitle="主打" />
-      {lunches.map(({ node }) => {
-        return <Lunch key={node.contentful_id} lunch={node} />
-      })}
+      <div className={styled.center}>
+        {lunches.map(({ node }) => {
+          return <Lunch key={node.contentful_id} lunch={node} />
+        })}
+      </div>
       <AniLink fade to="/lunches" className="btn-primary">
         更多餐點
       </AniLink>
