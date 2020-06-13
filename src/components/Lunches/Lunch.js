@@ -17,6 +17,9 @@ const Lunch = ({ lunch }) => {
           更多介紹
         </AniLink>
       </div>
+      <div className={styles.footer}>
+        <h3>{title}</h3>
+      </div>
     </article>
   )
 }
