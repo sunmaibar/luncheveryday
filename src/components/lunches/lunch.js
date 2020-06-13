@@ -13,9 +13,9 @@ const Lunch = ({ lunch }) => {
     <article className={styles.tour}>
       <div className={styles.imgContainer}>
         <Image fluid={mainImage} className={styles.img} alt="single" />
-        {/* <AniLink fade className={styles.link} to={`/lunches/${slug}`}>
+        <AniLink fade className={styles.link} to={`/lunches/${slug}`}>
           更多細節
-        </AniLink> */}
+        </AniLink>
       </div>
 
       <div className={styles.footer}>

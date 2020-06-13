@@ -6,7 +6,7 @@ import styles from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getLunches = graphql`
-  query {
+  {
     featuredLunch: allContentfulLuncheveryday2020(
       filter: { featured: { eq: true } }
     ) {
