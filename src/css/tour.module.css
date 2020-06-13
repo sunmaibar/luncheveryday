@@ -8,6 +8,7 @@
 
 .img-container {
   position: relative;
+  overflow: hidden;
   background: var(--primaryColor);
   transition: var(--mainTransition);
 }
@@ -28,7 +29,7 @@
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
-  padding: 0.5rem 0.7rem;
+  padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
