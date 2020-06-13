@@ -6,7 +6,7 @@ import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
-import FeaturedLunches from "../components/Home/FeaturedLunches"
+
 export default function Home({ data }) {
   return (
     <Layout>
@@ -24,7 +24,6 @@ export default function Home({ data }) {
           </AniLink>
         </Banner>
       </StyledHero>
-      <FeaturedLunches />
       <About />
       <Services />
     </Layout>
