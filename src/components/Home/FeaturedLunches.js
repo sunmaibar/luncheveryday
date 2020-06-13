@@ -20,7 +20,7 @@ const getLunches = graphql`
           contentful_id
           images {
             fluid {
-              src
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -32,10 +32,13 @@ const getLunches = graphql`
 const FeaturedLunches = () => {
   const response = useStaticQuery(getLunches)
   const lunches = response.featuredLunches.edges
-  console.log(lunches)
+
   return (
     <section className={styles.tours}>
       <Title title="本週" subtitle="主打" />
+      {lunches.map(({ node }) => {
+        return <Lunch key={node.contentful_id} lunch={node} />
+      })}
       <AniLink fade to="/lunches" className="btn-primary">
         更多餐點
       </AniLink>
