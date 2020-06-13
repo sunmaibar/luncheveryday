@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import styled from "styled-components"
+// import styled from "styled-components"
 
 const getLunches = graphql`
   query {
