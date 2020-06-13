@@ -2,7 +2,7 @@ import React from "react"
 import LunchList from "./LunchList"
 import { useStaticQuery, graphql } from "gatsby"
 
-const getalllunches = graphql`
+const getlunches = graphql`
   {
     allLunches: allContentfulLuncheveryday2020 {
       edges {
@@ -15,7 +15,7 @@ const getalllunches = graphql`
           contentful_id
           images {
             fluid {
-              src
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -25,12 +25,8 @@ const getalllunches = graphql`
 `
 
 const Lunchest = () => {
-  return (
-    <div>
-      hello from Lunchest
-      <LunchList />
-    </div>
-  )
+  const { allLunches } = useStaticQuery(getlunches)
+  return <LunchList allLunches={allLunches} />
 }
 
 export default Lunchest
