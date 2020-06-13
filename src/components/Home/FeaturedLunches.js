@@ -7,7 +7,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getLunches = graphql`
   query {
-    allLunches: allContentfulLuncheveryday2020 {
+    allLunches: allContentfulLuncheveryday2020(
+      filter: { featured: { eq: true } }
+    ) {
       edges {
         node {
           title
