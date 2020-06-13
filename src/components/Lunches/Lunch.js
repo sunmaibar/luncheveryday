@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/tour.module.css"
-import { FaMap } from "react-icons"
+import { FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Lunch = ({ lunch }) => {
@@ -19,6 +19,12 @@ const Lunch = ({ lunch }) => {
       </div>
       <div className={styles.footer}>
         <h3>{title}</h3>
+        <div className={styles.info}>
+          <h4 className={styles.country}>
+            <FaMap className={styles.icon} />
+            {road}
+          </h4>
+        </div>
       </div>
     </article>
   )
