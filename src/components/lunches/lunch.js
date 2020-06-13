@@ -2,7 +2,8 @@ import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/tour.module.css"
 import { FaMap } from "react-icons/fa"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Lunch = ({ lunch }) => {
   const { title, cost, slug, road, seatsNum, images } = lunch
@@ -12,9 +13,9 @@ const Lunch = ({ lunch }) => {
     <article className={styles.tour}>
       <div className={styles.imgContainer}>
         <Image fluid={mainImage} className={styles.img} alt="single" />
-        <AniLink fade className={styles.link} to={`/lunches/${slug}`}>
+        <Link fade className={styles.link} to={`/lunches/${slug}`}>
           更多細節
-        </AniLink>
+        </Link>
       </div>
 
       <div className={styles.footer}>
