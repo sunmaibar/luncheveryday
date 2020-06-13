@@ -1,5 +1,5 @@
 import React from "react"
-import Lunch from "../Lunches/Lunch"
+// import Lunch from "../Lunches/Lunch"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
@@ -20,7 +20,7 @@ const getLunches = graphql`
           contentful_id
           images {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -38,7 +38,8 @@ const FeaturedLunches = () => {
       <Title title="本週" subtitle="主打星" />
       <div className={styles.center}>
         {lunches.map(({ node }) => {
-          return <Lunch key={node.contentful_id} lunch={node} />
+          return <h1 key={node.contentful_id}>Hello</h1>
+          // <Lunch key={node.contentful_id} lunch={node} />
         })}
       </div>
 
