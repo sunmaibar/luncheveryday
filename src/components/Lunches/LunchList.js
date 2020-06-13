@@ -1,4 +1,7 @@
 import React, { Component } from "react"
+import styles from "../../css/items.module.css"
+import Lunch from "./Lunch"
+import Title from "../Title"
 
 export default class LunchList extends Component {
   state = {
@@ -8,11 +11,15 @@ export default class LunchList extends Component {
 
   componentDidMount() {
     this.setState({
-      lunches: this.props.lunches.edges,
-      sortedLunches: this.props.lunches.edges,
+      lunches: this.props.allLunches.edges,
+      sortedLunches: this.props.allLunches.edges,
     })
   }
   render() {
-    return <div>hello from LUNCHLIST</div>
+    return (
+      <section className={styles.tours}>
+        <Title title="所有" subtitle="餐點" />
+      </section>
+    )
   }
 }
