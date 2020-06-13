@@ -15,7 +15,7 @@ const getAlllunches = graphql`
           contentful_id
           images {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
