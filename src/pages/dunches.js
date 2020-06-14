@@ -7,6 +7,7 @@ const dunches = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.dunchesImage.childImageSharp.fluid} />
+      <h1>目前尚未完工，請耐心等候 </h1>
     </Layout>
   )
 }
