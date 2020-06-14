@@ -8,6 +8,7 @@ const getAlllunches = graphql`
       edges {
         node {
           title
+          category
           cost
           slug
           road

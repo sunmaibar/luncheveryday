@@ -11,6 +11,22 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
+.Mycenter {
+  width: 80%;
+  margin: 3px auto;
+}
+
+.btnMyStyled {
+  font-size: 1.2rem;
+  margin: 0.4rem;
+  padding: 0 0.4rem 0 0.4rem;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+}
+.btnMyStyled:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));

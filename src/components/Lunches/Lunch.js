@@ -5,8 +5,7 @@ import { FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Lunch = ({ lunch }) => {
-  const { title, cost, slug, road, seatsNum, images } = lunch
-
+  const { title, cost, slug, road, seatsNum, images, category } = lunch
   let mainImage = images[0].fluid
 
   return (
