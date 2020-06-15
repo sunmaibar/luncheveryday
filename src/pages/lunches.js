@@ -20,7 +20,7 @@ export const query = graphql`
     lunchesImage: file(relativePath: { eq: "邱記.JPG" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }

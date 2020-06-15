@@ -17,7 +17,7 @@ export const getImg = graphql`
     contactmeImage: file(relativePath: { eq: "contactme.JPG" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }

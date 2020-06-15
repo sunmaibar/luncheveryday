@@ -18,7 +18,7 @@ export const query = graphql`
     dunchesImage: file(relativePath: { eq: "dunches.JPG" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
