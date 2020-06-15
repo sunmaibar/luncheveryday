@@ -83,3 +83,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+hr {
+  width: 70%;
+  margin: 0 auto;
+}

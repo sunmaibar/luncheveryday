@@ -1,12 +1,10 @@
 import React from "react"
-import LunchList from "./LunchList"
+import DunchList from "./DunchList"
 import { useStaticQuery, graphql } from "gatsby"
 
-const getAlllunches = graphql`
+const getAllDunches = graphql`
   query {
-    allLunches: allContentfulLuncheveryday2020(
-      sort: { order: DESC, fields: createdAt }
-    ) {
+    allDunches: allContentfulDunches(sort: { order: DESC, fields: createdAt }) {
       edges {
         node {
           title
@@ -27,9 +25,9 @@ const getAlllunches = graphql`
   }
 `
 
-const Lunchest = () => {
-  const { allLunches } = useStaticQuery(getAlllunches)
-  return <LunchList allLunches={allLunches} />
+const Dunchest = () => {
+  const { allDunches } = useStaticQuery(getAllDunches)
+  return <DunchList allDunches={allDunches} />
 }
 
-export default Lunchest
+export default Dunchest
