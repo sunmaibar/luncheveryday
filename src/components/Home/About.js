@@ -38,7 +38,9 @@ const About = () => {
           <p>
             從小到大都在信義區居住著，會設計，攝影，寫程式做網頁，還會電腦動畫
           </p>
-          <p>會做這網站原因，也是希望能推廣更多在信義區的隱藏美食</p>
+          <p>
+            網站資料都是自己慢慢搜集來的，是希望能推廣更多在信義區的隱藏美食，不足之處還請見諒
+          </p>
 
           <AniLink fade to="/moreAbout">
             <button type="button" className="btn-primary">
