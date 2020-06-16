@@ -10,11 +10,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "信義區中午吃什麼",
-    description: "信義區內的巷弄美食，好吃的午餐都在這裡，別再問中午要吃什麼了",
+    description: "信義區內的巷弄美食，好吃的午餐都在這裡，在地人推薦",
     author: "@信義區大仁哥aka中二大叔",
     keywords: "信義區,中午吃什麼,巷弄美食,在地推薦,下午茶,餅乾",
     twitterUsername: "@jajalaba",
-    image: "./cover_reCapture.jpg",
+    image: "/cover_reCapture.jpg",
     siteUrl: "https://www.luncheveryday.com",
   },
   /* Your site config here */
