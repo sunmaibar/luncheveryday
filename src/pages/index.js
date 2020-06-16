@@ -8,10 +8,11 @@ import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import FeaturedLunches from "../components/Home/FeaturedLunches"
 import FeaturedDunches from "../components/Home/FeaturedDunches"
-
+import SEO from "../components/SEO"
 export default function Home({ data }) {
   return (
     <Layout>
+      <SEO title="Home" />
       <StyledHero
         home="true"
         className="home"
