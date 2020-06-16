@@ -19,7 +19,7 @@ export default function Home({ data }) {
         img={data.HeroImage.childImageSharp.fluid}
       >
         <Banner
-          title="信義區巷弄美食情報"
+          title="信義區-巷弄美食情報"
           info="微型私廚在這裏，地方上的媽媽已經準備好了，網站只提供店家查詢"
         >
           <AniLink fade to="/lunches" className="btn-white">
