@@ -10,7 +10,7 @@ export default [
   {
     icon: <FaExchangeAlt />,
     title: "自由的交易",
-    text: "網站不收取抽成",
+    text: "網站平台不收取抽成",
   },
   {
     icon: <FaUtensils />,
