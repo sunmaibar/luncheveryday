@@ -29,7 +29,7 @@ const SEO = ({ title, description }) => {
 
   return (
     <Helmet
-      htmlAttributes={{ lang: "zh-TW" }}
+      htmlAttributes={{ lang: "zh-Hant" }}
       title={`${title} | ${siteTitle}`}
     >
       <meta name="description" content={description || siteDesc} />
