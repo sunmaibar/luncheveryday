@@ -9,8 +9,8 @@ export default [
   },
   {
     icon: <FaExchangeAlt />,
-    title: "快速的篩選",
-    text: "網站讓大家可以快速查詢",
+    title: "自由的交易",
+    text: "網站不收取抽成",
   },
   {
     icon: <FaUtensils />,
