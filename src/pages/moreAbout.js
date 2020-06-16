@@ -3,10 +3,12 @@ import Layout from "../components/Layout"
 import styles from "../css/error.module.css"
 import Banner from "../components/Banner"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import SEO from "../components/SEO"
 
 const error = () => {
   return (
     <Layout>
+      <SEO title="關於我" />
       <header className={styles.error}>
         <Banner title="關於" info="網站作者">
           <p>
