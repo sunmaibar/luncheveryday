@@ -9,7 +9,7 @@ import SEO from "../components/SEO"
 const iwant = ({ data }) => {
   return (
     <Layout>
-      <SEO title="我想刊登" />
+      <SEO title="我想推薦" />
       <StyledHero img={data.manyPeopleImage.childImageSharp.fluid} />
 
       <Iwant_detaile />

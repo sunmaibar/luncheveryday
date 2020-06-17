@@ -22,7 +22,7 @@ const Iwant_detail = () => {
   const { office } = useStaticQuery(getImge)
   return (
     <section className={styles.about}>
-      <Title title="限本人報名" subtitle="" />
+      <Title title="在地" subtitle="推薦" />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
@@ -31,11 +31,9 @@ const Iwant_detail = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>免費刊登</h4>
-          <p>只要你有好的產品</p>
-          <p>
-            這是一個信義區在地人共同經營的品牌，主要是讓地區上的料理高手能更有機會曝光，加入有些事情也請遵守......
-          </p>
+          <h4>歡迎推薦</h4>
+          <p>信義區中的在地美食</p>
+          <p>在你心目中，什麼是你的第一名，歡迎推薦給我</p>
 
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSep0zBpMG94EQ8mMuXrR_pCJpOFYDs-0BSB5PkUZPGVckBKpg/viewform"
