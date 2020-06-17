@@ -13,7 +13,7 @@ export default [
   },
   {
     path: "/iwant",
-    text: "我想刊登",
+    text: "我想推薦",
   },
   {
     path: "/contact",
