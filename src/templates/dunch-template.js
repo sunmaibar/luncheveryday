@@ -60,9 +60,9 @@ const Template = ({ data }) => {
             </a>
           </h4>
           <p className={styles.desc}>{intro}</p>
-          <button type="button" className="btn-primary">
-            <Link to="/">回首頁</Link>
-          </button>
+          <Link to="/" className="btn-primary">
+            回首頁
+          </Link>
         </div>
       </section>
     </Layout>
