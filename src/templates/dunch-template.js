@@ -8,6 +8,7 @@ import { FaMoneyBillWave, FaMap } from "react-icons/fa"
 import Day from "../components/SingleTour/Day"
 import StyledHero from "../components/StyledHero"
 import SEO from "../components/SEO"
+import { Link } from "gatsby"
 
 const Template = ({ data }) => {
   const {
@@ -59,7 +60,9 @@ const Template = ({ data }) => {
             </a>
           </h4>
           <p className={styles.desc}>{intro}</p>
-          <h2>網站只提供查詢，買賣雙方請自行確認，避免消費糾紛</h2>
+          <button type="button" className="btn-primary">
+            <Link to="/">回首頁</Link>
+          </button>
         </div>
       </section>
     </Layout>
