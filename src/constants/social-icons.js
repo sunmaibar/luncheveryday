@@ -8,6 +8,6 @@ export default [
   },
   {
     icon: <FaInstagram />,
-    url: "https://www.instagram.com/luncheveryday2020/",
+    url: "https://www.instagram.com/jimmy_liao_food/",
   },
 ]

@@ -12,6 +12,9 @@
   background: var(--primaryColor);
   transition: var(--mainTransition);
 }
+.img-container > div {
+  min-height: 250px;
+}
 .img {
   transition: var(--mainTransition);
 }
