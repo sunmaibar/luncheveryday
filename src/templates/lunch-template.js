@@ -10,11 +10,15 @@ import StyledHero from "../components/StyledHero"
 import SEO from "../components/SEO"
 import { Link } from "gatsby"
 
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { BLOCKS } from "@contentful/rich-text-types"
+
 const Template = ({ data }) => {
   const {
     location,
     cost,
     seatsNum,
+    childContentfulLuncheveryday2020IntroRichTextNode: { json },
     phoneNum,
     images,
     intro: { intro },
@@ -23,6 +27,15 @@ const Template = ({ data }) => {
     fbLinkTo: { fbLinkTo },
   } = data.lunch
   const [mainImage, ...tourImages] = images
+
+  const Text = ({ children }) => <p>{children}</p>
+  const options = {
+    renderNode: {
+      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+    },
+    renderText: text =>
+      text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
+  }
 
   return (
     <Layout>
@@ -59,7 +72,9 @@ const Template = ({ data }) => {
               (看)給予評價
             </a>
           </h4>
-          <p className={styles.desc}>{intro}</p>
+          <p className={styles.desc}>
+            {documentToReactComponents(json, options)}
+          </p>
 
           <Link to="/" className="btn-primary">
             回首頁
@@ -82,6 +97,11 @@ export const query = graphql`
           ...GatsbyContentfulFluid
         }
       }
+
+      childContentfulLuncheveryday2020IntroRichTextNode {
+        json
+      }
+
       intro {
         intro
       }
