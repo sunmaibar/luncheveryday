@@ -1,28 +1,41 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import StyleHero from "../components/StyledHero"
+// import StyleHero from "../components/StyledHero"
 import styles from "../css/template.module.css"
 import Img from "gatsby-image"
 import { FaMoneyBillWave, FaMap } from "react-icons/fa"
-import Day from "../components/SingleTour/Day"
+// import Day from "../components/SingleTour/Day"
 import StyledHero from "../components/StyledHero"
 import SEO from "../components/SEO"
 import { Link } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { BLOCKS } from "@contentful/rich-text-types"
+// import * as richTextDoc from "./document.json"
 
 const Template = ({ data }) => {
   const {
     location,
     cost,
-    seatsNum,
+    childContentfulDunchesIntroRichTextNode: { json },
+    // seatsNum,
     phoneNum,
     images,
     intro: { intro },
     title,
-    slug,
+    // slug,
     fbLinkTo: { fbLinkTo },
   } = data.dunch
   const [mainImage, ...tourImages] = images
+
+  const Text = ({ children }) => <p>{children}</p>
+  const options = {
+    renderNode: {
+      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+    },
+    renderText: text =>
+      text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
+  }
 
   return (
     <Layout>
@@ -59,7 +72,9 @@ const Template = ({ data }) => {
               (看)給予評價
             </a>
           </h4>
-          <p className={styles.desc}>{intro}</p>
+          <p className={styles.desc}>
+            {documentToReactComponents(json, options)}
+          </p>
           <Link to="/" className="btn-primary">
             回首頁
           </Link>
@@ -80,6 +95,9 @@ export const query = graphql`
         fluid {
           ...GatsbyContentfulFluid
         }
+      }
+      childContentfulDunchesIntroRichTextNode {
+        json
       }
       intro {
         intro
