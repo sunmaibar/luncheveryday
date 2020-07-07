@@ -36,7 +36,7 @@ const FeaturedLunches = () => {
 
   return (
     <section className={styles.tours}>
-      <Title title="本週" subtitle="主打" />
+      <Title title="午餐" subtitle="推薦" />
       <div className={styles.center}>
         {lunches.map(({ node }) => {
           return <Lunch key={node.contentful_id} lunch={node} />
