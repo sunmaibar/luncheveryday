@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import styles from "../../css/tour.module.css"
 import { FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
 const Dunch = ({ dunch }) => {
   const { title, cost, slug, road, seatsNum, images } = dunch
@@ -12,9 +13,9 @@ const Dunch = ({ dunch }) => {
     <article className={styles.tour}>
       <div className={styles.imgContainer}>
         <Image fluid={mainImage} className={styles.img} alt="single" />
-        <AniLink fade className={styles.link} to={`/dunches/${slug}`}>
+        <Link fade className={styles.link} to={`/dunches/${slug}`}>
           更多介紹
-        </AniLink>
+        </Link>
       </div>
       <div className={styles.footer}>
         <h3>{title}</h3>

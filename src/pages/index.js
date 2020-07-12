@@ -20,7 +20,7 @@ export default function Home({ data }) {
       >
         <Banner
           title="信義區-巷弄美食情報"
-          info="發現信義區巷弄內的深層美食，在地人的推薦"
+          info="發現信義區巷弄內的深層美食，這裡有一些餐點可以參考"
         >
           <AniLink fade to="/lunches" className="btn-white">
             看看有什麼好料的
