@@ -14,7 +14,7 @@ export default [
   },
   {
     icon: <FaUtensils />,
-    title: "吃飽再說",
-    text: "沒吃飽哪來的體力工作 ",
+    title: "無廣告干擾",
+    text: "得到更好的網站體驗",
   },
 ]
