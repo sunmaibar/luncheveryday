@@ -1,14 +1,15 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-import img from "../../images/aboutme.jpg"
+import img from "../../images/aboutirene.jpg"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 const getImg = graphql`
-  query aboutImage {
-    aboutImage: file(relativePath: { eq: "aboutme.jpg" }) {
+  query aboutireneImage {
+    aboutireneImage: file(relativePath: { eq: "aboutirene.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -18,36 +19,38 @@ const getImg = graphql`
   }
 `
 
-const About = () => {
-  const { aboutImage } = useStaticQuery(getImg)
+const AboutIrene = () => {
+  const { aboutireneImage } = useStaticQuery(getImg)
   return (
     <section className={styles.about}>
-      <Title title="關於" subtitle="站長" />
+      <Title title="鹹牙齒" subtitle="特派員" />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
             {/* <img src={img} alt="關於信義區中午吃什麼" /> */}
             <Img
-              fluid={aboutImage.childImageSharp.fluid}
+              fluid={aboutireneImage.childImageSharp.fluid}
               alt="信義區中午吃什麼"
             />
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>在地信義人</h4>
-          <p>會設計，攝影，電腦動畫寫程式做網頁。</p>
-          <p> 有些事情不做不會怎樣，做了會很不一樣。</p>
-          <p>所以我開始做了這個網站，幫助地方商家發展，助人助己。</p>
+          <h4>文字挑逗您的味蕾</h4>
+          <p>艾琳・用美食和文字滋養美好是人生最大樂趣。 </p>
+          <p>
+            長年在信義區出沒尋訪美饌，熱愛各種亞洲菜與無糖手搖杯，
+            期待能用美食和文字讓和大家一起微醺，暫時拋卻生活的無力。
+          </p>
 
-          <AniLink fade to="/moreAbout">
+          <a target="blank" href="https://www.instagram.com/grin1624/">
             <button type="button" className="btn-primary">
-              更多關於
+              Instagram
             </button>
-          </AniLink>
+          </a>
         </article>
       </div>
     </section>
   )
 }
 
-export default About
+export default AboutIrene
