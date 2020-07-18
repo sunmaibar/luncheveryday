@@ -14,7 +14,7 @@ module.exports = {
     author: "@信義區大仁哥aka中二大叔",
     keywords: "信義區,中午吃什麼,巷弄美食,在地推薦,下午茶,餅乾",
     twitterUsername: "@jajalaba",
-    image: "/defaultBcg.jpeg",
+    image: "/defaultBcg.jpg",
     siteUrl: "https://www.luncheveryday.com",
   },
   /* Your site config here */
