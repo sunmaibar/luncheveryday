@@ -13,7 +13,7 @@ import SEO from "../components/SEO"
 export default function Home({ data }) {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="巷弄美食情報" />
       <StyledHero
         home="true"
         className="home"
