@@ -69,7 +69,7 @@ const Template = ({ data }) => {
           <h4>聯絡方式 {phoneNum}</h4>
           <h4>
             <a href={fbLinkTo} target="_blank" rel="noreferrer noopener">
-              (看)給予評價
+              每個人主觀不同，食記僅提供參考
             </a>
           </h4>
           <p className={styles.desc}>
