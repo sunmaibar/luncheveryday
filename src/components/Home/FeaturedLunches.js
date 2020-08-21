@@ -3,8 +3,9 @@ import Lunch from "../Lunches/Lunch"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import styled from "styled-components"
+import { Link } from "gatsby"
 
 const getLunches = graphql`
   query {
@@ -42,9 +43,9 @@ const FeaturedLunches = () => {
           return <Lunch key={node.contentful_id} lunch={node} />
         })}
       </div>
-      <AniLink fade to="/lunches" className="btn-primary">
+      <Link fade to="/lunches" className="btn-primary">
         更多餐點
-      </AniLink>
+      </Link>
     </section>
   )
 }

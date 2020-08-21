@@ -2,7 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/tour.module.css"
 import { FaMap } from "react-icons/fa"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Link } from "gatsby"
 
 const Dunch = ({ dunch }) => {

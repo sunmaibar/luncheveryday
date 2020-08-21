@@ -4,7 +4,8 @@ import styles from "../../css/about.module.css"
 import img from "../../images/aboutme.jpg"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
 const getImg = graphql`
   query aboutImage {
@@ -39,11 +40,11 @@ const About = () => {
           <p> 有些事情不做不會怎樣，做了會很不一樣。</p>
           <p>所以我開始做了這個網站，幫助地方商家發展，助人助己。</p>
 
-          <AniLink fade to="/moreAbout">
+          <Link fade to="/moreAbout">
             <button type="button" className="btn-primary">
               更多關於
             </button>
-          </AniLink>
+          </Link>
         </article>
       </div>
     </section>

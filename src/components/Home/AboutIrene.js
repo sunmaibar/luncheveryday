@@ -1,11 +1,11 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-import img from "../../images/aboutirene.jpg"
+// import img from "../../images/aboutirene.jpg"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaFacebook, FaInstagram } from "react-icons/fa"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 const getImg = graphql`
   query aboutireneImage {

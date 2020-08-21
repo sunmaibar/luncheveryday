@@ -1,10 +1,10 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-import img from "../../images/aboutme.jpg"
+// import img from "../../images/aboutme.jpg"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getImge = graphql`
   query office {

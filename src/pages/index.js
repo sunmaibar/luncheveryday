@@ -1,5 +1,7 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
+
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
@@ -23,9 +25,9 @@ export default function Home({ data }) {
           title="信義區-巷弄美食情報"
           info="發現信義區巷弄內的深層美食，這裡有一些餐點可以參考"
         >
-          <AniLink fade to="/lunches" className="btn-white">
+          <Link fade to="/lunches" className="btn-white">
             看看有什麼好料的
-          </AniLink>
+          </Link>
         </Banner>
       </StyledHero>
       <FeaturedLunches />

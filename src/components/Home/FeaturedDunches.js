@@ -3,8 +3,9 @@ import Dunch from "../Dunches/Dunch"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import styled from "styled-components"
+import { Link } from "gatsby"
 
 const getDunches = graphql`
   query {
@@ -41,9 +42,9 @@ const FeaturedDunches = () => {
             return <Dunch key={node.contentful_id} dunch={node} />
           })}
         </div>
-        <AniLink fade to="/dunches" className="btn-primary">
+        <Link fade to="/dunches" className="btn-primary">
           更多餐點
-        </AniLink>
+        </Link>
       </div>
     </section>
   )
