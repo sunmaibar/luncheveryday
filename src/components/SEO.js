@@ -34,10 +34,7 @@ const SEO = ({ title, description }) => {
     >
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
-      <meta
-        name="keywords"
-        content="信義區,中午吃什麼,巷弄美食,在地推薦,下午茶,餅乾,咖啡,信義區美食,餐廳,小吃,古早味,叫便當,有什麼好吃的,探索美食,美食部落客,美食網站,永吉路30巷,莊敬路,松山路,信義區周邊,有什麼好吃的"
-      />
+
       {/* faceBook card */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
@@ -52,6 +49,10 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta
+        name="keywords"
+        content="信義區,中午吃什麼,巷弄美食,在地推薦,下午茶,餅乾,咖啡,信義區美食,餐廳,小吃,古早味,叫便當,有什麼好吃的,探索美食,美食部落客,美食網站,永吉路30巷,莊敬路,松山路,信義區周邊,有什麼好吃的"
+      />
     </Helmet>
   )
 }
