@@ -33,7 +33,7 @@ const SEO = ({ title, description, coverimage }) => {
       title={`${title} | ${siteTitle}`}
     >
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={coverimage || image} />
+      <meta name="image" content={image} />
 
       {/* faceBook card */}
       <meta property="og:url" content={siteUrl} />
@@ -44,11 +44,11 @@ const SEO = ({ title, description, coverimage }) => {
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
       {/* twitter Card */}
-      <meta name="twitter:card" content={coverimage} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={coverimage || `${siteUrl}${image}`} />
+      <meta name="twitter:image" content={`${siteUrl}${image}`} />
       <meta
         name="keywords"
         content={
