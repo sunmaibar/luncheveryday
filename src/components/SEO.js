@@ -33,13 +33,13 @@ const SEO = ({ title, description, coverimage }) => {
       title={`${title} | ${siteTitle}`}
     >
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={image} />
+      <meta name="image" content={`${coverimage}||image`} />
 
       {/* faceBook card */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={siteDesc} />
+      <meta property="og:title" content={title || siteTitle} />
+      <meta property="og:description" content={description || siteDesc} />
       <meta property="og:image" content={`${coverimage}||${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
