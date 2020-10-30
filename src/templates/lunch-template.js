@@ -39,7 +39,7 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={intro} coverimage={mainImage} />
+      <SEO title={title} />
       <StyledHero img={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
