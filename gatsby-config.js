@@ -21,10 +21,15 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-react-helmet`,
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-169599061-1",
+        trackingIds: ["UA-169599061-1", "G-FWSRMM3HJ6"],
+
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
