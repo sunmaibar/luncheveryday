@@ -16,15 +16,15 @@ import { BLOCKS } from "@contentful/rich-text-types"
 const Template = ({ data }) => {
   const {
     location,
-    cost,
+    // cost,
     childContentfulDunchesIntroRichTextNode: { json },
     // seatsNum,
     phoneNum,
     images,
-    intro: { intro },
+    // intro: { intro },
     title,
     // slug,
-    fbLinkTo: { fbLinkTo },
+    // fbLinkTo: { fbLinkTo },
   } = data.dunch
   const [mainImage, ...tourImages] = images
 
@@ -88,9 +88,7 @@ export const query = graphql`
   query($slug: String!) {
     dunch: contentfulDunches(slug: { eq: $slug }) {
       location
-      cost
       slogan
-      seatsNum
       phoneNum
       images {
         fluid {
@@ -103,12 +101,8 @@ export const query = graphql`
       intro {
         intro
       }
-      road
       title
       slug
-      fbLinkTo {
-        fbLinkTo
-      }
     }
   }
 `

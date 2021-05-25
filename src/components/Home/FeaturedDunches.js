@@ -15,10 +15,7 @@ const getDunches = graphql`
           phoneNum
           slogan
           title
-          cost
           slug
-          road
-          seatsNum
           contentful_id
           images {
             fluid {
