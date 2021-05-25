@@ -6,7 +6,7 @@ import { FaMap } from "react-icons/fa"
 import { Link } from "gatsby"
 
 const Dunch = ({ dunch }) => {
-  const { title, cost, slug, road, seatsNum, images } = dunch
+  const { title, slug, images, slogan, phoneNum } = dunch
   let mainImage = images[0].fluid
 
   return (
@@ -22,11 +22,11 @@ const Dunch = ({ dunch }) => {
         <div className={styles.info}>
           <h4 className={styles.country}>
             <FaMap className={styles.icon} />
-            {road}
+            {slogan}
           </h4>
           <div className={styles.details}>
-            <h6>{seatsNum ? `共有${seatsNum}座位` : "不提供內用"}</h6>
-            <h6>{cost ? `平均消費約${cost}元` : "未能提供平均消費"}</h6>
+            <h6 style={{ marginTop: "0.5rem" }}>{phoneNum}</h6>
+            {/* <h6>{cost ? `平均消費約${cost}元` : "未能提供平均消費"}</h6> */}
           </div>
         </div>
       </div>

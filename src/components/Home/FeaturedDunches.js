@@ -12,6 +12,8 @@ const getDunches = graphql`
     featuredDunches: allContentfulDunches(filter: { featured: { eq: true } }) {
       edges {
         node {
+          phoneNum
+          slogan
           title
           cost
           slug
@@ -36,7 +38,7 @@ const FeaturedDunches = () => {
   return (
     <section className={styles.tours}>
       <div classname="My-index-BackGround">
-        <Title title="下午茶" subtitle="推薦" />
+        <Title title="防疫" subtitle="外送專區" />
         <div className={styles.center}>
           {dunches.map(({ node }) => {
             return <Dunch key={node.contentful_id} dunch={node} />

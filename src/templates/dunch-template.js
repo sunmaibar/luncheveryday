@@ -57,10 +57,10 @@ const Template = ({ data }) => {
           </div>
           <h2>{title}</h2>
           <div className={styles.info}>
-            <p>
+            {/* <p>
               <FaMoneyBillWave className={styles.icon} />
-              平均消費為 ${cost} /人
-            </p>
+              {slogan}
+            </p> */}
             <p>
               <FaMap className={styles.icon} />
               地址: {location}
@@ -69,7 +69,7 @@ const Template = ({ data }) => {
           <h4>聯絡方式 {phoneNum}</h4>
           <h4>
             {/* <a href={fbLinkTo} target="_blank" rel="noreferrer noopener"> */}
-            每個人主觀不同，食記僅提供參考
+            ＊＊＊照片以及文字資訊皆由店家自行提供＊＊＊
             {/* </a> */}
           </h4>
           <p className={styles.desc}>
@@ -89,6 +89,7 @@ export const query = graphql`
     dunch: contentfulDunches(slug: { eq: $slug }) {
       location
       cost
+      slogan
       seatsNum
       phoneNum
       images {

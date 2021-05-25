@@ -7,6 +7,8 @@ const getAllDunches = graphql`
     allDunches: allContentfulDunches(sort: { order: DESC, fields: createdAt }) {
       edges {
         node {
+          slogan
+          phoneNum
           title
           category
           cost

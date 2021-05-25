@@ -4,12 +4,22 @@ import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Dunchest from "../components/Dunches/Dunchest"
 import SEO from "../components/SEO"
+import Banner from "../components/Banner"
 
 const dunches = ({ data }) => {
   return (
     <Layout>
       <SEO title="下午茶" />
-      <StyledHero img={data.dunchesImage.childImageSharp.fluid} />
+      <StyledHero
+        home="true"
+        className="home"
+        img={data.dunchesImage.childImageSharp.fluid}
+      >
+        <Banner
+          title="同島一命，共同防疫"
+          info="彼此盡心力，努力度過世紀難關"
+        ></Banner>
+      </StyledHero>
       <Dunchest />
     </Layout>
   )

@@ -9,7 +9,7 @@ export default [
   },
   {
     path: "/dunches",
-    text: "下午茶點",
+    text: "防疫外送",
   },
   {
     path: "/iwant",
