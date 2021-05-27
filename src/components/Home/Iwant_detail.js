@@ -31,12 +31,12 @@ const Iwant_detail = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>歡迎推薦</h4>
-          <p>信義區中的在地美食</p>
-          <p>在你心目中，什麼是你的第一名，歡迎推薦給我</p>
+          <h4>防疫期間</h4>
+          <p>暫時不接受推薦</p>
+          <p>只接受商家自己填寫</p>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSep0zBpMG94EQ8mMuXrR_pCJpOFYDs-0BSB5PkUZPGVckBKpg/viewform"
+            href="https://forms.gle/uSunWnd6NwP5g8Hz9"
             target="_blank"
             rel="noreferrer noopener"
           >
