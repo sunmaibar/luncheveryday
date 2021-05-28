@@ -9,7 +9,7 @@ import Banner from "../components/Banner"
 const dunches = ({ data }) => {
   return (
     <Layout>
-      <SEO title="下午茶" />
+      <SEO title="防疫外送專區" />
       <StyledHero
         home="true"
         className="home"
