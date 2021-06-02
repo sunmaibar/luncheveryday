@@ -75,8 +75,8 @@ const Template = ({ data }) => {
           <p className={styles.desc}>
             {documentToReactComponents(json, options)}
           </p>
-          <Link to="/" className="btn-primary">
-            回首頁
+          <Link to="/dunches" className="btn-primary">
+            回上頁
           </Link>
         </div>
       </section>

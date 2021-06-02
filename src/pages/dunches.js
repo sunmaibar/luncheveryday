@@ -16,8 +16,8 @@ const dunches = ({ data }) => {
         img={data.dunchesImage.childImageSharp.fluid}
       >
         <Banner
-          title="同島一命，共同防疫"
-          info="彼此盡心力，努力度過世紀難關"
+          title="防疫顧全島，呷奔顧八肚"
+          info="想吃點什麼？這裡有上百家信義區的餐廳在跟你揮手👋"
         ></Banner>
       </StyledHero>
       <Dunchest />
