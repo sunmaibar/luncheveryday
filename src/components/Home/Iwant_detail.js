@@ -31,9 +31,9 @@ const Iwant_detail = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>防疫期間</h4>
-          <p>暫時不接受推薦</p>
-          <p>只接受商家自己填寫</p>
+          <h4>商家刊登</h4>
+          <p>把你最棒的特色餐點</p>
+          <p>讓更多人看到</p>
 
           <a
             href="https://forms.gle/uSunWnd6NwP5g8Hz9"
