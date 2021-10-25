@@ -32,8 +32,10 @@ const Iwant_detail = () => {
         </article>
         <article className={styles.aboutInfo}>
           <h4>商家刊登</h4>
-          <p>把你最棒的特色餐點</p>
-          <p>讓更多人看到</p>
+          <p>
+            只需要給我些商家基本資訊，我就可以幫你這網站上廣告，是沒有期限的，可以大大增加曝光機率
+          </p>
+          <p>是佛心不收錢的</p>
 
           <a
             href="https://forms.gle/uSunWnd6NwP5g8Hz9"

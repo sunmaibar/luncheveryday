@@ -9,11 +9,11 @@ export default [
   },
   {
     path: "/dunches",
-    text: "防疫外送",
+    text: "店家廣告",
   },
   {
     path: "/iwant",
-    text: "商家刊登",
+    text: "商家招募區",
   },
   {
     path: "/contact",
