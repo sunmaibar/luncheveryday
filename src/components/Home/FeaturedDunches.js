@@ -35,7 +35,7 @@ const FeaturedDunches = () => {
   return (
     <section className={styles.tours}>
       <div classname="My-index-BackGround">
-        <Title title="防疫" subtitle="外送專區" />
+        <Title title="商家" subtitle="廣告專區" />
         <div className={styles.center}>
           {dunches.map(({ node }) => {
             return <Dunch key={node.contentful_id} dunch={node} />
