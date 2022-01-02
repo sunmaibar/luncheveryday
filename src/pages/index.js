@@ -30,9 +30,9 @@ export default function Home({ data }) {
           </Link>
         </Banner>
       </StyledHero>
-      <FeaturedDunches />
-      <hr />
       <FeaturedLunches />
+      <hr />
+      <FeaturedDunches />
       <hr />
       <AboutIrene />
       <hr />
