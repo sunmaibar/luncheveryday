@@ -47,7 +47,7 @@ export default class DunchList extends Component {
   render() {
     return (
       <section className={styles.tours}>
-        <Title title="防疫" subtitle="外送專區" />
+        <Title title="商家" subtitle="廣告" />
         <p>請擅用分類按鈕👇</p>
         {/* categories */}
         <div className={styles.Mycenter}>
