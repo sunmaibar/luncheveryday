@@ -72,6 +72,7 @@ const Template = ({ data }) => {
             ＊＊＊照片以及文字資訊皆由店家自行提供＊＊＊
             {/* </a> */}
           </h4>
+          <h4>＊＊＊菜單與價格店家會隨時變動，以店家為主＊＊＊</h4>
           <p className={styles.desc}>
             {documentToReactComponents(json, options)}
           </p>

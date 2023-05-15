@@ -72,6 +72,8 @@ const Template = ({ data }) => {
             每個人主觀不同，食記僅提供參考
             {/* </a> */}
           </h4>
+          <h4>＊＊＊菜單與價格店家會隨時變動，以店家為主＊＊＊</h4>
+
           <p className={styles.desc}>
             {documentToReactComponents(json, options)}
           </p>
