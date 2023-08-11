@@ -9,14 +9,14 @@ import Banner from "../components/Banner"
 const dunches = ({ data }) => {
   return (
     <Layout>
-      <SEO title="防疫外送專區" />
+      <SEO title="商家廣告" />
       <StyledHero
         home="true"
         className="home"
         img={data.dunchesImage.childImageSharp.fluid}
       >
         <Banner
-          title="防疫顧全島，呷奔顧八肚"
+          title="人類有一顆永遠吃不飽的肚子"
           info="想吃點什麼？這裡有上百家信義區的餐廳在跟你揮手👋"
         ></Banner>
       </StyledHero>
